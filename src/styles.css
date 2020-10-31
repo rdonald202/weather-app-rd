@@ -1,0 +1,148 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  margin: 30px;
+}
+
+h1 {
+  padding: 10px;
+  font-size: 50px;
+  margin: 5px;
+  color: #330867;
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 20px;
+  color: #330867;
+  display: inline;
+  margin: 0 auto;
+  padding: 20px;
+  display: block;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  display: block;
+  width: 500px;
+}
+
+ul {
+  margin: 15px;
+}
+h2 {
+  margin: 15px;
+
+  font-size: 18px;
+
+  color: #330867;
+  display: inline;
+  margin: 0px;
+  position: relative;
+  right: -18px;
+}
+.container {
+  background-image: linear-gradient(
+    -225deg,
+    #7085b6 0%,
+    #87a7d9 50%,
+    #def3f8 100%
+  );
+  border-radius: 20px;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.search-bar {
+  display: inline;
+  text-align: left;
+  width: 60%;
+  padding: 15px;
+  background-color: white;
+  color: #330867;
+  border-color: #330867;
+}
+.btn {
+  font-size: 15px;
+  display: inline;
+  background-color: white;
+  color: #330867;
+  border-color: #330867;
+  border-radius: 10%;
+  position: relative;
+  top: -2px;
+  padding: 5px;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+.btn.hover {
+  background-color: #330867;
+  color: white;
+}
+
+.temperature,
+.additional-details {
+  font-size: 20px;
+  color: #330867;
+  text-align: left;
+  font-weight: bold;
+}
+
+.current-weather {
+  padding: 0;
+  margin: 15px;
+}
+
+.card {
+  background: none;
+  border: none;
+  padding: 15px;
+  margin: 20px 0px 10px 0px;
+}
+
+.card-title {
+  font-size: 14px;
+  color: #330867;
+  padding: 0;
+  font-weight: bold;
+  text-align: center;
+}
+.card-text {
+  font-size: 15px;
+  color: #330867;
+  padding: 0px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: #330867;
+  font-style: italic;
+  padding: 10px;
+}
+.updateUnit {
+  color: #330867;
+  text-decoration: none;
+  display: block;
+}
+
+#weatherCondition {
+  font-size: 20px;
+  color: #330867;
+  text-align: left;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+i.hero-icon {
+  font-size: 80px;
+  color: #330867;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+i.weekly-report-icons {
+  font-size: 20px;
+  color: #330867;
+  padding: 5px;
+}
