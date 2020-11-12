@@ -72,7 +72,12 @@ function displayWeather (response) {
   let liveWindSpeed= document.querySelector ("#windSpeed");
   liveWindSpeed.innerHTML = `Wind Speed ${windSpeed}km/h`;
 
+  let precipitation = response.data.clouds.all
+  let livePrecipitation= document.querySelector("#precipitation");
+  livePrecipitation.innerHTML = `Precipiation: ${precipitation}%`;
+
 }
+
 
 function citySearch (city) {
 

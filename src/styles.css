@@ -58,7 +58,7 @@ h2 {
     #def3f8 100%
   );
   border-radius: 20px;
-  width: 80%;
+  width: 70%;
   display: block;
   margin: 0 auto;
 }
@@ -91,10 +91,17 @@ h2 {
 }
 
 .temperature {
-  font-size: 35px;
+  font-size: 40px;
   color: #330867;
   text-align: left;
 }
+.tempConversion,
+.line {
+  font-size: 20px;
+  color: #330867;
+  text-decoration: none;
+}
+
 .additional-details {
   font-size: 18px;
   color: #330867;
@@ -140,11 +147,13 @@ h2 {
 }
 
 i.hero-icon {
-  font-size: 80px;
+  font-size: 60px;
   color: #330867;
   display: block;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  right: -60px;
 }
 i.weekly-report-icons {
   font-size: 20px;
