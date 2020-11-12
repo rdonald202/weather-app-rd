@@ -41,6 +41,15 @@ h2 {
   position: relative;
   right: -18px;
 }
+
+#weatherCondition {
+  font-size: 18px;
+  color: #330867;
+  text-transform: capitalize;
+  position: relative;
+  right: -18px;
+}
+
 .container {
   background-image: linear-gradient(
     -225deg,
@@ -127,13 +136,6 @@ h2 {
   display: block;
 }
 
-#weatherCondition {
-  font-size: 20px;
-  color: #330867;
-  text-align: left;
-  font-weight: bold;
-  text-transform: capitalize;
-}
 i.hero-icon {
   font-size: 80px;
   color: #330867;
