@@ -90,12 +90,15 @@ h2 {
   color: white;
 }
 
-.temperature,
-.additional-details {
-  font-size: 20px;
+.temperature {
+  font-size: 35px;
   color: #330867;
   text-align: left;
-  font-weight: bold;
+}
+.additional-details {
+  font-size: 18px;
+  color: #330867;
+  text-align: left;
 }
 
 .current-weather {
