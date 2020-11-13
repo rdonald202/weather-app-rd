@@ -90,22 +90,31 @@ h2 {
   color: white;
 }
 
-.temperature {
-  font-size: 40px;
+.currentTemp {
+  font-size: 50px;
   color: #330867;
   text-align: left;
+  position: relative;
+  left: -110px;
 }
-.tempConversion,
-.line {
-  font-size: 20px;
-  color: #330867;
-  text-decoration: none;
+
+.units {
+  position: relative;
+  left: -100px;
 }
 
 .additional-details {
   font-size: 18px;
   color: #330867;
   text-align: left;
+  position: relative;
+}
+
+.active,
+.farenheitLink {
+  font-size: 20px;
+  color: #330867;
+  text-decoration: none;
 }
 
 .current-weather {
@@ -145,16 +154,15 @@ h2 {
   text-decoration: none;
   display: block;
 }
-
-i.hero-icon {
-  font-size: 60px;
-  color: #330867;
+.heroIcon {
+  font-size: 20px;
   display: block;
   margin: 0 auto;
   text-align: center;
   position: relative;
-  right: -60px;
+  left: -40px;
 }
+
 i.weekly-report-icons {
   font-size: 20px;
   color: #330867;

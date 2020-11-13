@@ -19,7 +19,7 @@
         <div class="card-body">
             <form id="search-form">
                 <input type="text" class="form-control search-bar" placeholder="Enter your city..."
-                    id="search-text-input" />
+                    id="search-text-input" autocomplete="off" />
                 <button type="submit" class="btn">Search</button>
 
             </form>
@@ -32,28 +32,23 @@
 
         <div class="row current-weather">
             <div class="col-3">
+                <img src="" alt="Clear" id="iconHero" class="heroIcon" />
+            </div>
+            <div class="col-3">
                 <ul>
-                    <li class="temperature">
+                    <li> <strong class="currentTemp" id="temperature">  </strong>
 
-                        <span id="currentTemp"> 14 </span>
-                         <a href="#" class="tempConversion"
-                        id="convert-to-farenheit">℃</a> 
-                    
-                        <span class="line">|</span>
-                        <a href="#" class="tempConversion" id="convert-to-celcius"> ℉</a>
-                    
-        
+                        <span class="units"><a href="#" id="celsius-link" class="active">°C</a> |
+                            <a href="#" class="farenheitLink" id="fahrenheit-link">°F</a></span>
 
                     </li>
                 
                 </ul>
             </div>
-            <div class="col-3">
-                <i class="fas fa-cloud-sun hero-icon"></i>
-            </div>
+            
             <div class="col-3">
                 <ul class="additional-details">
-                    <li id="windSpeed">Wind: 3km/h</li>
+                    <li id="windSpeed">Wind speed: 3km/h</li>
                     <li id="precipitation">Precipitation: 20% </li>
                 </ul>
             </div>

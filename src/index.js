@@ -61,8 +61,8 @@ function displayWeather (response) {
   city.innerHTML = `${search}`;
 
   let currentTemperature = Math.round(response.data.main.temp);
-  let temperature = document.querySelector ("#currentTemp");
-  temperature.innerHTML = `${currentTemperature}℃`;
+  let temperature = document.querySelector ("#temperature");
+  temperature.innerHTML = `${currentTemperature}`;
 
   let weatherCondition = response.data.weather[0].description;
   let weather = document.querySelector ("#weatherCondition");
@@ -74,9 +74,21 @@ function displayWeather (response) {
 
   let precipitation = response.data.clouds.all
   let livePrecipitation= document.querySelector("#precipitation");
-  livePrecipitation.innerHTML = `Precipiation: ${precipitation}%`;
+  livePrecipitation.innerHTML = `Precipitation: ${precipitation}%`;
+
+  let icon = response.data.weather[0].icon
+  let iconElement = document.querySelector("#iconHero");
+  iconElement.setAttribute( "src",
+    `http://openweathermap.org/img/wn/${icon}@2x.png`
+  )
+  iconElement.innerHTML = `${icon}`;
+
+  celsiusTemperature = Math.round(response.data.main.temp);
+
 
 }
+
+
 
 
 function citySearch (city) {
@@ -88,6 +100,36 @@ let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${
   axios.get(apiUrl).then(displayWeather);
 }
 
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheiTemperature);
+}
+
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+
+
+
+let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+citySearch("Glasgow");
