@@ -95,16 +95,16 @@ h2 {
   color: #330867;
   text-align: left;
   position: relative;
-  left: -110px;
+  right: 80px;
 }
 
 .units {
   position: relative;
-  left: -100px;
+  right: 70px;
 }
 
 .additional-details {
-  font-size: 18px;
+  font-size: 15px;
   color: #330867;
   text-align: left;
   position: relative;
@@ -160,7 +160,6 @@ h2 {
   margin: 0 auto;
   text-align: center;
   position: relative;
-  left: -40px;
 }
 
 i.weekly-report-icons {
