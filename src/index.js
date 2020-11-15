@@ -123,6 +123,7 @@ function displayForecast(response) {
         <strong>
           ${Math.round(forecast.main.temp_max)}°
         </strong>
+        |
         ${Math.round(forecast.main.temp_min)}°
       </div>
     </div>
@@ -137,7 +138,7 @@ let apiKey = "0572524632f3441c87819f42001a3a63";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeather);
 
-  apiUrl= `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}$units=metric`;
+  apiUrl= `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
 

@@ -41,6 +41,21 @@ h2 {
   position: relative;
   right: -18px;
 }
+h5 {
+  font-size: 18px;
+  color: #330867;
+  padding: 0;
+  text-align: center;
+  margin: 20px 0px 0px 0px;
+}
+
+.weather-forecast-temperature {
+  font-size: 15px;
+  color: #330867;
+  padding: 0;
+  text-align: center;
+  margin: 0px;
+}
 
 #weatherCondition {
   font-size: 18px;
@@ -48,6 +63,11 @@ h2 {
   text-transform: capitalize;
   position: relative;
   right: -18px;
+}
+
+.weekly-report-icons {
+  padding: 0px;
+  margin: 0px;
 }
 
 .container {
@@ -61,6 +81,7 @@ h2 {
   width: 70%;
   display: block;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .search-bar {
@@ -104,7 +125,7 @@ h2 {
 }
 
 .additional-details {
-  font-size: 15px;
+  font-size: 18px;
   color: #330867;
   text-align: left;
   position: relative;
@@ -129,19 +150,6 @@ h2 {
   margin: 20px 0px 10px 0px;
 }
 
-.card-title {
-  font-size: 14px;
-  color: #330867;
-  padding: 0;
-  font-weight: bold;
-  text-align: center;
-}
-.card-text {
-  font-size: 15px;
-  color: #330867;
-  padding: 0px;
-}
-
 .footer {
   text-align: center;
   font-size: 12px;
@@ -160,10 +168,4 @@ h2 {
   margin: 0 auto;
   text-align: center;
   position: relative;
-}
-
-i.weekly-report-icons {
-  font-size: 20px;
-  color: #330867;
-  padding: 5px;
 }
