@@ -144,6 +144,8 @@ h5 {
   position: relative;
 }
 
-.weekly-report-icons {
+.card-body {
   text-align: center;
+  position: relative;
+  right: -50px;
 }
